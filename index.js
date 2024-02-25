@@ -4,3 +4,5 @@ function greet(name) {
 }
 
 const greeting = greet("Braden Meyerhoff");
+
+console.log(greeting);
