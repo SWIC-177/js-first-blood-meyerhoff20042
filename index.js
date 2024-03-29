@@ -1,8 +1,14 @@
-function greet(name) {
-  const str1 = "Hello, ";
-  return str1.concat(name);
+function verifyAdulthood(person) {
+  if (person.age >= 18) return `Welcome, ${person.name}!`;
+
+  return `You are not old enough to enter, ${person.name}.`;
 }
 
-const greeting = greet("Braden Meyerhoff");
+const person = {
+  name: "John",
+  age: 178,
+};
 
-console.log(greeting);
+const adultMessage = verifyAdulthood(person);
+
+console.log(adultMessage);
